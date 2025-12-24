@@ -19,7 +19,7 @@ export default function Banner() {
             <h2 className="text-white text-[40px] font-bold">
               Nghe nói em thích tôi
             </h2>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 text-">
               <img src={IconRating} alt="IconRating" className="w-8 h-8" />
               <img src={IconRating} alt="IconRating" className="w-8 h-8" />
               <img src={IconRating} alt="IconRating" className="w-8 h-8" />
@@ -35,8 +35,7 @@ export default function Banner() {
               Sau khi bị bạn gái bỏ rơi, Ninh Chí Khiêm đã tìm đến Lưu Tranh.
               Sau khi cô rời đi anh mới nhận ra sai lầm và biết mình cũng đã
               thật sự yêu Lưu Tranh. Không ngờ, định mệnh sắp đặt để Chí Khiêm
-              được gặp lại Lưu Tranh khi cô về nước, được sắp xếp đến làm việc
-              tại bệnh viện của Chí Khiêm và mọi chuyện bắt đầu từ đây.
+              được gặp lại Lưu Tranh khi cô về nước.
             </p>
             <div className="flex items-center space-x-4">
               <button className="p-3 text-white bg-black font-bold text-lg">
