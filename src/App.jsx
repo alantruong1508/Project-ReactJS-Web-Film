@@ -60,8 +60,8 @@ function App() {
   return (
     <>
       <MovieProvider>
-        <Header onSearch={handleSearch} />
         <main className="bg-black pb-10">
+          <Header onSearch={handleSearch} />
           <Banner />
           {/*truyền toán tử 3 ngôi vào để khi người dùng bấm search thì 2 component này sẽ bị remove và thay vào bằng kết quả search*/}
           {movieSearch.length > 0 ? (

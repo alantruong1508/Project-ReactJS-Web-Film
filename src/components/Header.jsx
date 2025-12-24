@@ -4,38 +4,36 @@ export default function Header({ onSearch }) {
   // tạo useState để lưu trữ những giá trị search
   const [textSearch, setSearch] = useState("");
   return (
-    // Thẻ Header
-    <header className="p-4 bg-black flex items-center justify-between">
-      {/* thẻ nav chứa home, about, contact */}
-      <div className="flex items-center space-x-4">
-        <h1 className="text-[30px] uppercase font-bold text-red-700">Movie</h1>
-        <nav className="flex items-center space-x-4"></nav>
-        <a href="#" className="text-white">
-          Home
-        </a>
-        <a href="#" className="text-white">
-          About
-        </a>
-        <a href="#" className="text-white">
-          Contact
-        </a>
+    <div className="p-4 flex justify-between  fixed top-0 left-0 w-full z-[9999]  bg-black">
+      <div className="flex items-center gap-8">
+        <h1 className="text-[30px] uppercase text-red-700 font-bold">Movie</h1>
+        <nav className="hidden md:flex items-center space-x-5">
+          <a href="#" className="hover:text-red-700 text-white">
+            Home
+          </a>
+          <a href="#" className="hover:text-red-700 text-white">
+            About
+          </a>
+          <a href="#" className="hover:text-red-700 text-white">
+            Contact
+          </a>
+        </nav>
       </div>
-      {/* thẻ nav chứa thanh search và nút search */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-5">
         <input
           type="text"
           placeholder="Search"
-          className="p-3 text-black bg-white"
-          onChange={(e) => setSearch(e.target.value)}
+          className="border border-gray-300 p-2 text-black bg-white"
           value={textSearch}
+          onChange={(e) => setSearch(e.target.value)}
         />
         <button
-          className="p-2 text-white bg-red-600 cursor-pointer"
+          className="bg-red-700 text-white px-3 py-1 rounded-lg"
           onClick={() => onSearch(textSearch)}
         >
           Search
         </button>
       </div>
-    </header>
+    </div>
   );
 }
