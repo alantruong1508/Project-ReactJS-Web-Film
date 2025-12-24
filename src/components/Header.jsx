@@ -23,7 +23,7 @@ export default function Header({ onSearch }) {
         <input
           type="text"
           placeholder="Search"
-          className="border border-gray-300 p-2 text-black bg-white"
+          className="border border-gray-300 p-2 text-black bg-white w-[100px] sm:w-full"
           value={textSearch}
           onChange={(e) => setSearch(e.target.value)}
         />
